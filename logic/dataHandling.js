@@ -5,7 +5,7 @@ const dateToDays = (data) => {
     const initialData = moment(data)
     const today = moment()
     const diff = today.diff(initialData, 'days', true)
-    return Math.round(diff)
+    return diff
   } catch (err) {
     console.error(err)
     return 0
